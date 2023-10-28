@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Card Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Raleway:wght@300&display=swap"
+    rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(255, 83, 83);
+        }
+        .card{
+            background-color:rgb(255, 255, 90);
+            width:330px;
+            /* height:518px; */
+            margin: auto;
+            border-radius:15px;
+            border:2px solid black;
+        }
+        .image img{
+            user-select: none;
+            display:block;
+            margin: 21px auto 20px auto ;
+            height:180px;
+            width:278px;
+            border-radius:13px;
+            /* border:2px solid black; */
+        }
+        .content{
+            margin:23px;
+            font-size:17px;
+            font-style: bold;
+            color:rgba(0, 0, 0, 0.733);
+            text-align: center;
+            /* border:2px solid black; */
+            user-select: none;
+        }
+        .capsules{
+            /* border:2px solid black; */
+            display:block;
+            width: fit-content;
+            margin:auto; 
+        }
+        .btn{
+            user-select: none;
+            display:inline-block;
+            margin:0px 1px;
+            border-radius:7px;
+            font-size:15px;
+            padding:5px;
+            background-color: rgba(0, 255, 251, 0.547);
+            color:rgb(0, 0, 0);
+        }
+        .btn:hover{
+            background-color: rgb(0, 0, 0);
+            color:rgb(255, 255, 255);
+            cursor: pointer;
+        }
+        a{
+            /* border:2px solid black; */
+            display:block;
+            width:fit-content;
+            user-select: none;
+            border-radius:5px;
+            margin:auto;
+            padding:5px;
+            font-size: 15px;
+            text-decoration: none;
+            color:rgb(0, 0, 0);
+            background-color: rgba(0, 255, 251, 0.547);
+        }
+        a:hover{
+            cursor: pointer;
+            background-color: rgb(0, 0, 0);
+            color:rgb(255, 255, 255);
+        }
+        details summary:hover{
+            color:rgb(255, 238, 0);
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+     <div class="image">
+        <img src="https://cdn.pixabay.com/photo/2017/09/01/21/53/sunglasses-2705642_1280.jpg"alt="Error Loading...">
+     </div>
+     <div class="capsules">
+        <div class="btn" id="btn1">Boating</div>
+        <div class="btn" id="btn2">Ships</div>
+        <div class="btn" id="btn3">Navy</div>
+     </div>
+     <div class="content">
+        <h2>The Tranquil Pleasures of Boating</h2>
+        Boating is more than just a recreational activity; it's an enchanting experience that connects us with nature's serenity. 
+        <!-- <br><br><details><summary>Read More</summary><br>
+            The gentle rocking of the boat, the soothing sound of water against the hull, and the endless horizons of glistening waves make boating a delightful escape from the demands of everyday life. It's a journey where the destination is often less important than the voyage itself, a voyage that carries with it the promise of discovery, relaxation, and a profound connection with the aquatic wonders of our planet.</details> -->
+    </div>
+    <a href="https://en.wikipedia.org/wiki/Boating" target="_blank">Read More</a><br>
+    </div>
+</body>
+</html>
